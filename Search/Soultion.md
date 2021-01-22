@@ -9,6 +9,9 @@
 
 # Assignment 1:Searching Algorithms
 
+# Set A
+
+
 ***a)Create a random array of n integers. Accept a value x from user and use linear search 
 algorithm to check whether the number is present in the array or not and output the position if 
 the number is present***
@@ -348,15 +351,12 @@ int main ()
     return 0;
 }
 ```
-***
-c)Read the data from file ‘sortedcities.txt’ containing sorted names of cities and their STD codes. 
+
+***c)Read the data from file ‘sortedcities.txt’ containing sorted names of cities and their STD codes. 
 Accept a name of the city from user and use binary search algorithm to check whetherthe name is 
 present in the file and output the STD code, otherwise output “city not in the list”.***
-***
-
 
 ```c
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
