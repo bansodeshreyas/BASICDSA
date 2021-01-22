@@ -7,19 +7,13 @@
 ***Roll no:6***
 
 
-***Assignment 1:Searching Algorithms***
+# Assignment 1:Searching Algorithms
 
+***a)Create a random array of n integers. Accept a value x from user and use linear search 
+algorithm to check whether the number is present in the array or not and output the position if 
+the number is present***
 
 ```c
-/*
-Name:Shreyas Prabhakar Bansode
-Roll no:6
-Problem: Set A ,
-a)Create a random array of n integers. Accept a value x from user and use linear search 
-algorithm to check whether the number is present in the array or not and output the position if 
-the number is present
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -77,15 +71,12 @@ int main()
 }
 ```
 
-```c
-/*
-Name:Shreyas Prabhakar Bansode
-Roll no:6
-Problem: Set A ,
-b)Accept n values in array from user. Accept a value x from user and use sentinel linear 
+***b)Accept n values in array from user. Accept a value x from user and use sentinel linear 
 search algorithm to check whether the number is present in the array or not and output the 
-position if the number is present.
-*/
+position if the number is present.***
+
+
+```c
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -136,15 +127,13 @@ int main()
 }
 ```
 
-```c
-/*
-Name:Shreyas Prabhakar Bansode
-Roll no:6
-Problem: Set A ,
-c) Accept n sorted values in array from user. Accept a value x from user and use binary 
+
+***c) Accept n sorted values in array from user. Accept a value x from user and use binary 
 search algorithm to check whether the number is present in sorted array or not and output the 
-position if the number is present.
-*/
+position if the number is present.***
+
+
+```c
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -193,17 +182,14 @@ int main()
     return 0;
 }
 ```
+# Set B
+
+***a)Read the data from file 'cities.txt' containing names of cities and their STD codes. Accept a 
+name of the city from user and use linear search algorithm to check whether the name is 
+present in the file and output the STD code, otherwise output “city not in the list”.***
+
 
 ```c
-/*
-Name:Shreyas Prabhakar Bansode
-Roll no:6
-Problem: Set A ,
-a)Read the data from file 'cities.txt' containing names of cities and their STD codes. Accept a 
-name of the city from user and use linear search algorithm to check whether the name is 
-present in the file and output the STD code, otherwise output “city not in the list”.
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -277,15 +263,13 @@ int main ()
       return 0;
 }
 ```
-
+***b)Read the data from file 'cities.txt' containing names of cities and their STD codes.
+ Accept a name of the city from user and use sentinel linear search algorithm to check 
+ whether the name is present in the file and output the STD code,
+ otherwise output “city not in the list”.***
+ 
+ 
 ```c
-/*
-Name:Shreyas Prabhakar Bansode                                   
-Roll no:6    
-Set B
-b)Read the data from file 'cities.txt' containing names of cities and their STD codes. Accept a name of the city from user and use sentinel linear search algorithm to check whether the name is present in the file and output the STD code, otherwise output “city not in the list”.
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -364,15 +348,14 @@ int main ()
     return 0;
 }
 ```
+***
+c)Read the data from file ‘sortedcities.txt’ containing sorted names of cities and their STD codes. 
+Accept a name of the city from user and use binary search algorithm to check whetherthe name is 
+present in the file and output the STD code, otherwise output “city not in the list”.***
+***
+
 
 ```c
-/*                                                                
-Name:Shreyas Prabhakar Bansode 
-Roll no:6 
-Problem: Set B ,
-c)
-Read the data from file ‘sortedcities.txt’ containing sorted names of cities and their STD codes. Accept a name of the city from user and use binary search algorithm to check whetherthe name is present in the file and output the STD code, otherwise output “city not in the list”.
-*/
 
 #include<stdio.h>
 #include<stdlib.h>
