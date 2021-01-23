@@ -65,15 +65,13 @@ int main()
     int n;
 
     srand(time(0));
-
-
     printf("\nEnter n value:");
     scanf("%d",&n);
     arr=generate_arr(n);
     printarr(arr,n);
-
-	  printf("\nSorted array using bubble sort\n");
-	  printarr(b_sort(arr,n),n);
+    
+	printf("\nSorted array using bubble sort\n");
+    printarr(b_sort(arr,n),n);
     free(arr);
     return 0;
 }
@@ -128,7 +126,6 @@ int main()
     int n;
 
     srand(time(0));
-
     printf("\nEnter n value:");
     scanf("%d",&n);
     arr=generate_arr(n);
@@ -158,7 +155,6 @@ int * generate_arr(int n)
 
     for(i=0;i<n;i++)
         arr[i]=rand()%100;
-
     return arr;
 }
 
@@ -167,30 +163,27 @@ void printarr(int *arr,int n)
     int i;
     for( i=0;i<n;i++)
         printf(" %d ",arr[i]);
-
     printf("\n");
 }
 
 int *s_sort(int *arr,int n)
 {
-        int i,j,min,temp;
+   int i,j,min,temp;
 
-        for(i=0;i<n;i++)
-        {
-          min=i;
+   for(i=0;i<n;i++)
+   {
+      min=i;
           
-          for(j=i+1;j<n;j++)
-          {
+      for(j=i+1;j<n;j++)
+     {
             if(arr[min]>arr[j])
-              min=j;
-             
-          }
-          temp=arr[i];
-          arr[i]=arr[min];
-         arr[min]=temp;
-          
-        }
-        return arr;
+              min=j;  
+     }   
+     temp=arr[i];
+     arr[i]=arr[min];
+     arr[min]=temp;       
+   }
+   return arr;
 }
 
 int main()
@@ -198,8 +191,7 @@ int main()
     int *arr;
     int n;
 
-    srand(time(0));
-    
+    srand(time(0));  
     printf("\nEnter n value:");
     scanf("%d",&n);
     arr=generate_arr(n);
@@ -256,6 +248,12 @@ void print_emp(Employee *emp,int size)
 	while(i<size)
 	printf("\nname: %s || age: %d || salary: %d\n",emp[i].name,emp[i].age,emp[i++].salary);
 }
+void swap(Employee *emp,int i,int j)
+{
+    Employee temp=emp[i];
+    emp[i]=emp[j];
+    emp[j]=temp;
+}
 
 Employee * b_sort(Employee *emp,int size)
 {
@@ -301,9 +299,7 @@ Employee * s_sort(Employee *emp,int size)
       if(emp[j].age<emp[i].age)
       min=j;
     }
-    Employee temp=emp[i];
-    emp[i]=emp[min];
-    emp[min]=temp;
+    swap(emp,i,min);
   }
   return emp;
 }
@@ -395,6 +391,13 @@ void print_emp(Employee *emp,int size)
 	printf("\nname: %s || age: %d || salary: %d\n",emp[i].name,emp[i].age,emp[i++].salary);
 }
 
+void swap(Employee *emp,int i,int j)
+{
+    Employee temp=emp[i];
+    emp[i]=emp[j];
+    emp[j]=temp;
+}
+
 Employee* b_sort(Employee *emp,int size)
 {
 	int i,j;
@@ -419,7 +422,7 @@ Employee * i_sort(Employee *emp,int size)
   {
     temp=emp[i];
     for(j=i-1;(strcmp(temp.name,emp[j].name)<0 && j>=0);j--)
-    emp[j+1]=emp[j];
+      emp[j+1]=emp[j];
 
 	emp[j+1]=temp;
   }
@@ -440,9 +443,7 @@ Employee * s_sort(Employee *emp,int size)
       if(strcmp(emp[min].name,emp[j].name)>0)
          min=j;
     }
-    Employee temp=emp[i];
-    emp[i]=emp[min];
-    emp[min]=temp;
+    swap(emp,i,min);
   }
         return emp;
 }
