@@ -317,7 +317,7 @@ int main()
 	{
 	  size=store(emp);
 	  if(size!=-1)
-		{
+	 {
 		  puts("-----------------------------------------------------");
 		  print_emp(emp,size);
 		  puts("1-BUBBLE SORT");
@@ -346,9 +346,9 @@ int main()
 			  puts("Enter valid choice please");
 			  break;
 			}
-		}
-		else
-			printf("File not found");
+	  }
+	  else
+		 printf("File not found");
 	}
 	return 0;
 }
@@ -444,9 +444,7 @@ Employee * s_sort(Employee *emp,int size)
     emp[i]=emp[min];
     emp[min]=temp;
   }
-
         return emp;
-
 }
 int main()
 {
