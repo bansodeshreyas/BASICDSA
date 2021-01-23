@@ -70,7 +70,7 @@ int main()
         else
            printf("\nnumber not found\n");
         free(arr);
-    return 0;
+        return 0;
 }
 ```
 
@@ -247,22 +247,22 @@ int main ()
      int index;
      int size;
      size=store(cities);
+     
      if(size!=-1) // i.e if file exits
      {
        display(cities,size);
-       while(1)
-      {
-           printf("\nEnter city to search:");
-           gets(key);
-           index=l_search(cities,size,key);
-           if(index!=-1)
-               printf("\nCity name: %s | std code:%d\n",cities[index].name,cities[index].std);
-           else
-               printf("\n %s not in list\n",key);
+       printf("\nEnter city to search:");
+       gets(key);
+       index=l_search(cities,size,key);
+        
+       if(index!=-1)
+          printf("\nCity name: %s | std code:%d\n",cities[index].name,cities[index].std);
+       else
+          printf("\n %s not in list\n",key);
+ 
       }
-      }
-        else
-                printf("File not found in the directory");
+      else
+          printf("File not found in the directory");
       return 0;
 }
 ```
@@ -309,18 +309,20 @@ void display(City *cities,int size)
 
 int  s_search(City *cities,int size,char *key)
 {
-      char last[30];
+        char last[30];
      	int i=0;
     	strcpy(last,cities[size-1].name);
 	    strcpy(cities[size-1].name,key);
 
      	while(strcmp(key,cities[i].name))
-      i++;strcpy(cities[size-1].name,last);
-      
-      if(!strcmp(cities[i].name,key))
-         return i;
-      else
-         return -1;
+        i++;
+        
+        strcpy(cities[size-1].name,last);
+            
+        if(!strcmp(cities[i].name,key))
+           return i;
+        else
+           return -1;
 }
 
 int main ()
@@ -333,18 +335,16 @@ int main ()
      
      if(size!=-1) // i.e if file exits
     {
-      display(cities,size);
-
-      while (1)
-      {
+        display(cities,size);     
         printf("\nEnter city to search:");
         gets(key);
         index=s_search(cities,size,key);
+        
         if(index!=-1)
-        printf("\nCity name: %s | std code:%d\n",cities[index].name,cities[index].std);
+            printf("\nCity name: %s | std code:%d\n",cities[index].name,cities[index].std);
         else
-        printf("\n %s not in the list\n",key);
-      }
+            printf("\n %s not in the list\n",key);
+      
     }
     else
        printf("File not found in the directory");    
@@ -421,18 +421,14 @@ int main ()
      if(size!=-1) // i.e if file exits
      {
        display(cities,size);
-       while (1)
-      {
-          printf("\nEnter city to search:");
-          gets(key);
-
-          index=search(cities,0,size-1,key);
-
-          if(index!=-1)
+       printf("\nEnter city to search:");
+       gets(key);
+       index=search(cities,0,size-1,key);
+       
+       if(index!=-1)
               printf("\nCity name: %s | std code:%d\n",cities[index].name,cities[index].std);
-          else
+       else
               printf("\n %s not in list the list\n",key);
-      }
      }
      else
         printf("File not found in the directory");
