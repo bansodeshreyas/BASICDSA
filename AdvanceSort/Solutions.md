@@ -84,7 +84,7 @@ int main()
 ```
 
 
-*** b) Sort a random array of n integers (create a random array of n integers) in ascending order 
+***b) Sort a random array of n integers (create a random array of n integers) in ascending order 
 by using recursive Quick sort algorithm.***
 
 ```c
