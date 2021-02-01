@@ -11,8 +11,8 @@
 # Set A
 
 
-*** a) Sort a random array of n integers (accept the value of n from user) in ascending order by 
-using recursive Counting sort algorithm.  ***
+***a) Sort a random array of n integers (accept the value of n from user) in ascending order by 
+using recursive Counting sort algorithm.***
 
 ```c
 #include<stdio.h>
@@ -167,8 +167,8 @@ int main()
 
 ```
 
-*** c)Sort a random array of n integers (accept the value of n from user) in ascending order by 
-using a recursive Merge sort algorithm. ***
+***c)Sort a random array of n integers (accept the value of n from user) in ascending order by 
+using a recursive Merge sort algorithm.***
 
 ```c
 #include<stdio.h>
@@ -258,8 +258,8 @@ int main()
 
 # Set B
 
-*** a)Read the data from the ‘employee.txt’ file and sort on age using Counting sort, Merge sort, 
-Quick sort and write the sorted data to another file 'sortedemponage.txt'. ***
+***a)Read the data from the ‘employee.txt’ file and sort on age using Counting sort, Merge sort, 
+Quick sort and write the sorted data to another file 'sortedemponage.txt'.***
 
 
 ```c
@@ -467,7 +467,7 @@ int main()
 
 ```
 
-*** b)Read the data from the file and sort on names in alphabetical order (use strcmp) using 
+***b)Read the data from the file and sort on names in alphabetical order (use strcmp) using 
 Counting sort, Merge sort, Quick sort and write the sorted data to another file 
 'sortedemponname.txt'.***
 
